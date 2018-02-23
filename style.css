@@ -511,8 +511,9 @@ thead {
 .ptb-30 {
     padding: 30px 0;
 }
-.ptb-50 {
+.ptb-50 #home {
     padding: 50px 0;
+    color: black;
 }
 .ptb-70 {
     padding: 70px 0;
@@ -702,7 +703,7 @@ thead {
 }
 
 .brand-bg.darken-2 {
-    background-color: #0288d1 !important;
+    background-color: #333 !important;
 }
 
 .brand-hover:hover {

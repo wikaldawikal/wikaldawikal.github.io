@@ -65,12 +65,12 @@
 
 <!-- banner -->
 
-        <div class="jumbotron scrollyspy" id="header" style="background: url(image/banner2.jpg)">
+        <div class="jumbotron scrollyspy" id="header" style="background: url(image/banner2.jpg); padding: 0px; margin: 0px; min-height: 550px;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <h1 style="padding-top: 200px; color: black">wikal pratama</h1>
-                        <img src="image/banner3.png" style="width: 300px; height: 500px; position: absolute; left: 800px; top: 88px;">
+                        <img src="image/banner3.png" style="width: 300px; height: 500px; position: absolute; left: 800px; top: 50px;">
                         <br>
                         <br>
                         <div class="sub" style="color: black">
@@ -79,18 +79,25 @@
                         </div>
                         <br>
                         <br>
-                        <a href="#"><img src="image/icon2.png" style="width: 230px; height: 50px;"></a>
                     </div>
-                    <div class="col-md-6">
-
-                    </div>
+                        <div class="col-md-6" style="position: absolute; top: 450px; width: 100%;">
+                          <ul class="social-link tt-animate ltr">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                          </ul>
+                      </div><!-- /.col-md-6 -->
                 </div>
             </div>
         </div>
 
         <!-- end of banner -->
 
-        <section class="aboutme scrollspy" id="bio"  style="min-height: 650px;">
+        <section class="aboutme scrollspy" id="bio"  style="min-height: 900px; padding-top: 200px;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8" style="background-color: white; width: 700px; height: 500px; box-shadow: 5px 10px 8px #888888 ">
@@ -273,6 +280,64 @@
             
         </section>
         
+        
+        
+        <section class="section-padding" id="work">
+            <div class="container">
+
+              <div class="text-center mb-80">
+                  <h2 class="section-title">Work Experience</h2>
+                  <p class="section-sub">Berikut beberapa pengalaman kerja yang sudah pernah dijalani hingga saat ini</p>
+              </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                      <div class="featured-item seo-service">
+                          <div class="icon">
+                              <img class="img-responsive" src="assets/img/seo/service-1.jpg" alt="">
+                          </div>
+                          <div class="desc">
+                              <h2>Syntax Community</h2>
+                              <p>Menjadi ketua umum di tahun 2016-2017</p>
+                              <div class="bg-overlay"></div>
+                              <p><a class="learn-more" href="#">Learn More <i class="fa fa-long-arrow-right"></i></a></p>
+                          </div>
+                      </div><!-- /.featured-item -->
+                    </div><!-- /.col-md-3 -->
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="featured-item seo-service">
+                          <div class="icon">
+                              <img class="img-responsive" src="assets/img/seo/service-2.jpg" alt="">
+                          </div>
+                          <div class="desc">
+                              <h2>Smart Team</h2>
+                              <p>Sebagai Project Manager dari tahun 2017-hingga saat ini</p>
+                              <div class="bg-overlay"></div>
+                              <p><a class="learn-more" href="#">Learn More <i class="fa fa-long-arrow-right"></i></a></p>
+                          </div>
+                      </div><!-- /.featured-item -->
+                    </div><!-- /.col-md-3 -->
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="featured-item seo-service">
+                          <div class="icon">
+                              <img class="img-responsive" src="assets/img/seo/service-3.jpg" alt="">
+                          </div>
+                          <div class="desc">
+                              <h2>Edu Van Java</h2>
+                              <p>Sebagai Front End Web Developer</p>
+                              <div class="bg-overlay"></div>
+                              <p><a class="learn-more" href="#">Learn More <i class="fa fa-long-arrow-right"></i></a></p>
+                          </div>
+                      </div><!-- /.featured-item -->
+                    </div><!-- /.col-md-3 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section>
+        
+        
+        
         <section class="section-padding list-news scrollspy" id="blog">
             <div class="container" style="overflow: hidden">
 
@@ -426,7 +491,21 @@
                 <a href="#" class="waves-effect waves-light btn green" style="margin-left: 500px;"><i class="fa fa-plus"></i> View More</a>
 
             </div><!-- /.container -->
-        </section>  
+        </section> 
+        
+        
+        <section class="kontak">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Where To Find Me</h1>
+                    </div>
+                </div>
+                <!-- map-section -->
+        <div id="myMap" class="height-350"></div>
+        <!-- /.map-section -->
+            </div>
+        </section>
         
         
          <!--footer 3 start -->
@@ -461,7 +540,67 @@
         <script src="assets/js/menuzord.js"></script>
         <script src="assets/js/equalheight.js"></script>
         <script src="assets/flexSlider/jquery.flexslider-min.js"></script>
+         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script src="assets/js/scripts.js"></script>
+        
+        <!-- Google Map Customization  -->
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+
+                //set your google maps parameters
+                var $latitude = 40.716304, //Visit http://www.latlong.net/convert-address-to-lat-long.html for generate your Lat. Long.
+                    $longitude = -73.995763,
+                    $map_zoom = 16 /* ZOOM SETTING */
+
+                //google map custom marker icon 
+                var $marker_url = 'assets/img/pin.png';
+
+                //we define here the style of the map
+                var style = [{
+                    "stylers": [{
+                        "hue": "#03a9f4"
+                    }, {
+                        "saturation": 10
+                    }, {
+                        "gamma": 2.15
+                    }, {
+                        "lightness": 12
+                    }]
+                }];
+
+                //set google map options
+                var map_options = {
+                    center: new google.maps.LatLng($latitude, $longitude),
+                    zoom: $map_zoom,
+                    panControl: true,
+                    zoomControl: true,
+                    mapTypeControl: true,
+                    streetViewControl: true,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    scrollwheel: false,
+                    styles: style
+                }
+                //inizialize the map
+                var map = new google.maps.Map(document.getElementById('myMap'), map_options);
+                //add a custom marker to the map                
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng($latitude, $longitude),
+                    map: map,
+                    visible: true,
+                    icon: $marker_url
+                });
+
+                var contentString = '<div id="mapcontent">' + '<p>materialize, 1355 Market Street, San Francisco.</p></div>';
+                var infowindow = new google.maps.InfoWindow({
+                    maxWidth: 320,
+                    content: contentString
+                });
+
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map, marker);
+                });
+            });
+        </script>
         
 
     </body>
